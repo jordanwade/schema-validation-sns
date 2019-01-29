@@ -1,7 +1,9 @@
-var Ajv = require('ajv');
-var ajv = new Ajv();
+const Ajv = require('ajv');
+const AWS = require('aws-sdk');
 
-var schema = {
+const ajv = new Ajv();
+
+const schema = {
 	properties: {
 		foo: { type: 'number' },
 		bar: {
@@ -12,7 +14,7 @@ var schema = {
 	}
 };
 
-var data = {
+const data = {
 	foo: 0,
 	bar: {
 		baz: 'abc'
@@ -21,3 +23,7 @@ var data = {
 
 const valid = ajv.validate(schema, data);
 if (!valid) console.log(ajv.errors);
+
+var validate = ajv.compile(schema);
+console.log(`Data Valid: ${validate(data)}`);
+console.log(data);
