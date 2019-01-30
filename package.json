@@ -1,26 +1,26 @@
 {
-	"name": "schema-validation-sns",
-	"version": "0.0.0",
-	"description": "Validates a schema and object and sends a message to SNS",
-	"main": "index.js",
-	"dependencies": {
-		"ajv": "6.7.0",
-		"aws-sdk": "2.395.0",
-		"dotenv": "6.2.0",
-		"nodemon": "1.18.9"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"start": "nodemon src/index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jordanwade/schema-validation-sns.git"
-	},
-	"author": "Jordan Wade",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/jordanwade/schema-validation-sns/issues"
-	},
-	"homepage": "https://github.com/jordanwade/schema-validation-sns#readme"
+  "name": "schema-validation-sns",
+  "version": "0.0.0",
+  "description": "Validates a schema and object and sends a message to SNS",
+  "main": "index.js",
+  "dependencies": {
+    "ajv": "6.7.0",
+    "aws-sdk": "2.395.0",
+    "dotenv": "6.2.0",
+    "nodemon": "1.18.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanwade/schema-validation-sns.git"
+  },
+  "author": "Jordan Wade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanwade/schema-validation-sns/issues"
+  },
+  "homepage": "https://github.com/jordanwade/schema-validation-sns#readme"
 }
