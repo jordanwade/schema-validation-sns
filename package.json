@@ -6,6 +6,7 @@
 	"dependencies": {
 		"ajv": "6.7.0",
 		"aws-sdk": "2.395.0",
+		"dotenv": "6.2.0",
 		"nodemon": "1.18.9"
 	},
 	"devDependencies": {},
